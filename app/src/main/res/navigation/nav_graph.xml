@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/songSearchFormFragment">
+
+    <fragment
+        android:id="@+id/songSearchFormFragment"
+        android:name="com.gokul.itunes.song.ui.fragment.SongSearchFormFragment"
+        android:label="SongSearchFormFragment" >
+        <action
+            android:id="@+id/action_songSearchFormFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songListFragment"
+        android:name="com.gokul.itunes.song.ui.fragment.SongListFragment"
+        android:label="fragment_song_list"
+        tools:layout="@layout/fragment_song_list">
+        <action
+            android:id="@+id/action_songListFragment_to_songDetailDialogFragment"
+            app:destination="@id/songDetailDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/songDetailDialogFragment"
+        android:name="com.gokul.itunes.song.ui.fragment.SongDetailDialogFragment"
+        android:label="fragment_song_detail_dialog"
+        tools:layout="@layout/fragment_song_list" />
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#10C7FD</color>
+    <color name="colorAccent">#FD617B</color>
+
+
+    <color name="lineItem">#ccc</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+</resources>

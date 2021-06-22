@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".song.ui.fragment.SongSearchFormFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/et_query"
+            android:layout_marginLeft="30dp"
+            android:hint="@string/search"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rounded_query_edittext"
+            android:drawableStart="@drawable/ic_baseline_search_48"
+            android:drawablePadding="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="35sp"
+            android:singleLine="true"
+            android:imeOptions="actionSend"
+            />
+
+        <Button
+            android:id="@+id/btn_query"
+            android:text="@string/search"
+            android:layout_width="match_parent"
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
